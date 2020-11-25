@@ -1,7 +1,7 @@
 package com.mylearning.sqldatabasegoto.entities.relations
 
 import androidx.room.Entity
-@Entity
+@Entity(primaryKeys = ["studentName", "subjectName"])
 data class StudentSubjectCrossRef (
     /*
     * Because this is a relationship table, nor of this is the primary key
